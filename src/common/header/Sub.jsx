@@ -3,7 +3,6 @@ import { SubContainer, SubMenu } from './style';
 import MenuData from '../../assets/api/menu';
 
 const Sub = () => {
-    // HTML 엔티티를 실제 문자로 변환하는 함수
     const decodeHTMLEntities = (text) => {
         const textArea = document.createElement('textarea');
         textArea.innerHTML = text;
@@ -27,8 +26,7 @@ const Sub = () => {
 
     return (
         <SubContainer>
-            <SubMenu className="left">{renderMenuItems(['brand', 'menu', 'store'])}</SubMenu>
-            <SubMenu className="right">{renderMenuItems(['community', 'franchise'])}</SubMenu>
+            <SubMenu className="left">{renderMenuItems(['Introduce', 'Publishing', 'PrintAndDesign','CustomerService'])}</SubMenu>
         </SubContainer>
     );
 };

@@ -39,69 +39,48 @@ const App = () => {
                     </Route>
                     {/* main end */}
 
-                    {/* brand */}
-                    <Route path="/brand" element={<Layout />}>
-                        <Route path="intro" element={<Intro />} />
-                        <Route path="bi" element={<Bi />} />
-                        <Route path="headquarters" element={<Headquarters />} />
-                        <Route path="location" element={<Location />} />
+                    {/* Introduce */}
+                    <Route path="/Introduce" element={<Layout />}>
+                        <Route path="FirstCreationIntroduce" element={<Intro />} />
+                        <Route path="ManagementPhilosophy" element={<Bi />} />
+                        <Route path="Directions" element={<Headquarters />} />
                     </Route>
-                    {/* brand end */}
+                    {/* Introduce end */}
 
-                    {/* menu */}
-                    <Route path="/menu" element={<Layout />}>
-                        <Route path="dessert" element={<Dessert />} />
-                        <Route path="beverage" element={<Dessert />} />
-                        <Route path="mdproduct" element={<Dessert />} />
+                    {/* Publishing */}
+                    <Route path="/Publishing" element={<Layout />}>
+                        <Route path="PublicationInformation" element={<Dessert />} />
+                        <Route path="publishingProcess" element={<Dessert />} />
+                        <Route path="BookstoreDistribution" element={<Location />} />
+                        <Route path="Marketing" element={<Dessert />} />
                     </Route>
-                    {/* menu end */}
+                    {/* Publishing end */}
 
-                    {/* franchise */}
-                    <Route path="/franchise" element={<Layout />}>
-                        <Route path="competitive" element={<Competitive />} />
-                        <Route path="interior" element={<Interior />} />
-                        <Route path="procedure" element={<Procedure />} />
-                        <Route path="contact" element={<Contact />} />
-                        <Route path="alliance">
+                    {/* PrintAndDesign */}
+                    <Route path="/PrintAndDesign" element={<Layout />}>
+                        <Route path="paperPrinting" element={<Competitive />} />
+                        <Route path="livePrint" element={<Interior />} />
+                        <Route path="brandingDesign" element={<Procedure />} />
+                        {/* <Route path="alliance">
                             <Route index element={<Alliance />} />
                             <Route path="alliancePurchasing" element={<AlliancePurchasing />} />
                             <Route path="allianceEntry" element={<AllianceEntry />} />
                             <Route path="allianceSupplier" element={<AllianceSupplier />} />
                             <Route path="allianceSupplier2" element={<AllianceSupplier2 />} />
                             <Route path="allianceSupplier3" element={<AllianceSupplier3 />} />
-                        </Route>
+                        </Route> */}
                     </Route>
-                    {/* franchise end */}
+                    {/* PrintAndDesign end */}
 
-                    {/* community */}
-                    <Route path="/community" element={<Layout />}>
-                        <Route path="information">
-                            <Route index element={<Information />} />
-                            <Route path=":informationID" element={<InformationDetail />} />
-                        </Route>
-                        <Route path="notice">
-                            <Route index element={<Notice />} />
-                            <Route path=":noticeID" element={<NoticeDetail />} />
-                        </Route>
-                        <Route path="eventstore">
-                            <Route index element={<EventStore />} />
-                            <Route path=":eventstoreID" element={<EventstoreDetail />} />
-                        </Route>
-                        <Route path="register" element={<Register />} />
+                    {/* CustomerService */}
+                    <Route path="/CustomerService" element={<Layout />}>
+                        <Route path="announcement" element={<Procedure />} />
+                        <Route path="QNA" element={<Procedure />} />
+                        <Route path="FrequentlyAskedQuestions" element={<Procedure />} />
+                        <Route path="Consultationform" element={<Procedure />} />
                     </Route>
-                    {/* community end */}
+                    {/* CustomerService end */}
 
-                    {/* store */}
-                    <Route path="/store" element={<Layout />}>
-                        <Route path="competitiveness" element={<Store />}></Route>
-                    </Route>
-                    {/* store end */}
-
-                    {/* notFile */}
-                    <Route path="*" element={<Layout />}>
-                        <Route path="*" element={<NotFile />} />
-                    </Route>
-                    {/* notFile end */}
                 </Routes>
             </HashRouter>
         </>

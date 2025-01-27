@@ -17,16 +17,17 @@ export const HeaderWrap = styled.header`
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: white;
+    background-color: #826197;
     display: flex;
     justify-content: center;
+    height : 70px;
 `;
 
 export const HeaderInner = styled.div`
     width: 100%;
-    max-width: 1440px; // 최대 너비 설정
+    // min-width: 1440px; // 최대 너비 설정
     margin: 0 auto;
-    height: 100px;
+    height: 70px;
     position: relative;
 
     .mo {
@@ -55,12 +56,12 @@ export const HeaderInner = styled.div`
     }
 
     @media (max-width: ${breakpoints.tablet}) {
-        height: 100px;
+        height: 70px;
         //background-color: firebrick;
     }
 
     @media (max-width: ${breakpoints.mobile}) {
-        height: 100px;
+        height: 70px;
         //background-color: darkorange;
     }
     
@@ -111,11 +112,12 @@ export const HeaderOuter = styled.div`
     width: 100%;
     background-color: transparent;
     position: absolute;
-    top: 100px;
+    top: 70px;
     left: 0;
     z-index: 999;
     display: flex;
     justify-content: center;
+    border-top : 1px solid #fff;
 `;
 
 // ---------------------------------------------------------------------
@@ -124,9 +126,10 @@ export const HeaderOuter = styled.div`
 export const SubWrap = styled.div`
     position: absolute;
     width: 100%;
-    max-width: 1440px;
+    // max-width: 1440px;
+    padding-top : 15px;
     top: 0;
-    background-color: white;
+    background-color: #826197;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transform-origin: top;
@@ -206,7 +209,7 @@ export const Nav = styled.nav`
             a {
                 position: relative;
                 text-decoration: none;
-                color: #333;
+                color: #fff;
                 transition: color 0.3s ease;
 
                 &::before {
@@ -218,9 +221,9 @@ export const Nav = styled.nav`
                     display: block;
                     width: 0;
                     height: 35%;
-                    background-color: #e4e8ec;
+                    background-color: rgba(218,211,223,0.2);
                     transition: width 0.3s;
-                }
+                } 
 
                 &:hover {
                     color: #c0c0c0;
@@ -238,6 +241,7 @@ export const LeftNav = styled.div`
     display: flex;
     align-items: center;
     flex-basis: 50%;
+    width: 1440px;
 `;
 
 export const RightNav = styled.div`
@@ -251,7 +255,7 @@ export const RightNav = styled.div`
 export const SubContainer = styled.div`
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
@@ -261,44 +265,11 @@ export const SubContainer = styled.div`
         padding: 20px 0;
     }
 
-    .left {
-        ul:nth-child(1) {
-            padding: 0 60px;
-        }
-
-        ul:nth-child(2) {
-            padding: 0 40px;
-        }
-
-        ul:nth-child(3) {
-            padding: 0 60px;
-        }
-    }
-
-    .right {
-        ul:nth-child(1) {
-            padding: 0 55px;
-        }
-
-        ul:nth-child(2) {
-            padding: 0 65px;
-        }
-    }
-
-    .left,
-    .right {
-        justify-content: space-evenly;
-        display: flex;
-
-        @media (max-width: ${breakpoints.mobile}) {
-            width: 100%;
-            margin-bottom: 10px;
-        }
-    }
 `;
 
 export const SubMenu = styled.div`
     display: flex;
+    gap : 120px;
 
     ul {
         list-style: none;
@@ -307,6 +278,7 @@ export const SubMenu = styled.div`
 
     li {
         margin-bottom: 10px;
+        text-align:start;
 
         @media (max-width: ${breakpoints.mobile}) {
             margin-bottom: 5px;
@@ -316,7 +288,7 @@ export const SubMenu = styled.div`
     a {
         position: relative;
         text-decoration: none;
-        color: #333;
+        color: rgba(255,255,255,0.8);
         font-size: 16px;
         font-weight: 600;
         transition: color 0.3s ease;
@@ -334,12 +306,12 @@ export const SubMenu = styled.div`
             display: block;
             width: 0;
             height: 35%;
-            background-color: #e4e8ec;
+            background-color: rgba(218,211,223,0.5);
             transition: width 0.3s;
         }
 
         &:hover {
-            color: #c0c0c0;
+            color: #fff;
 
             &::before {
                 width: 100%;
@@ -391,7 +363,7 @@ export const MobileNavWrap = styled.div`
     position: fixed;
     right: ${props => props.$isOpen ? '0px' : '-450px'};
     top: 100px;
-    background-color: #FFF;
+    background-color: #826197;
     width: 100%;
     max-width: 450px;
     height: calc(100% - 80px);

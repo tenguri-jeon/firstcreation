@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { HeaderWrap, HeaderInner, HeaderOuter, NavContainer, Nav, SubWrap, LeftNav, RightNav } from './style';
 import { useEffect, useState } from 'react';
 import Sub from './sub';
-import MobileMenu from './mobileMenu';
+// import MobileMenu from './mobileMenu';
 
 const Header = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -44,9 +44,9 @@ const Header = () => {
                             </Nav>
                         </LeftNav>
                     </NavContainer>
-                    <div className="mo">
+                    {/* <div className="mo">
                         <MobileMenu />
-                    </div>
+                    </div> */}
                 </div>
             </HeaderInner>
             <div className="pc">

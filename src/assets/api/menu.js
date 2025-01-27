@@ -1,30 +1,24 @@
 export default {
-    brand: [
-        { id: 1, main: 'intro', desc: '소개' },
-        { id: 2, main: 'bi', desc: 'BI' },
-        { id: 3, main: 'headquarters', desc: '본사' },
-        { id: 4, main: 'location', desc: '오시는길' },
+    Introduce: [
+        { id: 1, main: 'FirstCreationIntroduce', desc: '첫창조 소개' },
+        { id: 2, main: 'ManagementPhilosophy', desc: '경영이념' },
+        { id: 3, main: 'Directions', desc: '오시는 길' },
     ],
-    menu: [
-        { id: 5, main: 'dessert', desc: '디저트' },
-        { id: 6, main: 'beverage', desc: '커피 &#38; 음료' },
-        { id: 7, main: 'mdproduct', desc: 'MD 상품' },
+    Publishing: [
+        { id: 4, main: 'PublicationInformation', desc: '출판 정보' },
+        { id: 5, main: 'publishingProcess', desc: '출판 과정' },
+        { id: 6, main: 'BookstoreDistribution', desc: '서점유통' },
+        { id: 7, main: 'Marketing', desc: '마케팅' },
     ],
-    store: [{ id: 8, main: 'competitiveness', desc: '매장찾기' }],
-    community: [
-        { id: 9, main: 'information', desc: '이벤트 &#38; 소식' },
-        { id: 10, main: 'notice', desc: '공지' },
-        { id: 11, main: 'eventstore', desc: '판매 매장 리스트' },
-        { id: 12, main: 'register', desc: '고객 문의 접수' },
+    PrintAndDesign: [
+        {id: 8, main: 'paperPrinting', desc: '종이 인쇄' },
+        {id: 9, main: 'livePrint', desc: '실사 출력' },
+        {id: 10, main: 'brandingDesign', desc: '브랜딩 디자인' },
     ],
-    franchise: [
-        { id: 13, main: 'competitive', desc: '창업경쟁력' },
-        { id: 14, main: 'interior', desc: '인테리어' },
-        { id: 15, main: 'procedure', desc: '가맹절차' },
-        { id: 16, main: 'contact', desc: '가맹문의' },
-        { id: 17, main: 'alliance', desc: '제휴&#183;제안' },
-        { id: 18, main: 'alliance', desc: '기업 및 단체 구매 문의', sub: 'alliancePurchasing' },
-        { id: 19, main: 'alliance', desc: '입점 제의', sub: 'allianceEntry' },
-        { id: 20, main: 'alliance', desc: '협력사 신청', sub: 'allianceSupplier' },
+    CustomerService: [
+        { id: 11, main: 'announcement', desc: '공지사항' },
+        { id: 12, main: 'QNA', desc: 'Q&A' },
+        { id: 13, main: 'FrequentlyAskedQuestions', desc: '자주묻는 질문' },
+        { id: 14, main: 'Consultationform', desc: '상담폼' },
     ],
 };
