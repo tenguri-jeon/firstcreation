@@ -1,7 +1,30 @@
 import styled from 'styled-components';
 
 export const SNSListWrap = styled.div`
-
+    margin : 0 360px;
+    h1 {
+        color : #131313;
+        font-size : 48px;
+        position : relative;
+        font-weight : bold;
+        // &::after{
+        //     // position : absolute;
+        //     bottom: 0;
+        //     transform : translate(-100px , 60px);
+        //     display : block;
+        //     content : "SNS";
+        //     font-size : 200px;
+        //     background: rgb(194,194,194);
+        //     background: linear-gradient(180deg, rgba(194,194,194,1) 0%, rgba(245,245,245,1) 80%);
+        //     background-clip: text;
+        //     -webkit-background-clip: text;
+        //     color: transparent;
+        //     font-weight : bold;
+        // }
+        span{
+            color : #7E7E7E;
+        }
+    }
 `
 
 export const TitleWrap = styled.div`

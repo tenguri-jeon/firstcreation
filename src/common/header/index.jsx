@@ -16,12 +16,11 @@ const Header = () => {
                 <div className="inner">
                     <h1>
                         <Link to="/">
-                            {/* <img
+                            <img
                                 className="svg"
-                                src="https://raw.githubusercontent.com/TeamProject-Dessert39/dataCenter/9ff6b61cec7dd243b2c413364b8b1b9d6b2c0c4a/icon/dessert39_simbol.svg"
-                                alt="dessert39_simbol"
-                            /> */}
-                            <span>여기 로고</span>
+                                src="https://github.com/tenguri-jeon/firstCreationImg/blob/main/firstCreation_Logo.png?raw=true"
+                                alt="첫창조 로고"
+                            />
                         </Link>
                     </h1>
                     <NavContainer className="pc" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>

@@ -91,19 +91,13 @@ export const HeaderInner = styled.div`
         }
 
         .svg {
-            width: 50px;
-            height: 80px;
+            width: 130px;
+            height: 104px;
             vertical-align: middle;
-
-            @media (max-width: ${breakpoints.mobile}) {
-                width: 30px;
-                height: 48px;
-            }
-
-            @media (min-width: ${breakpoints.tablet}) {
-                width: 40px;
-                height: 64px;
-            }
+            position: absolute;
+            top: 0;
+            transform: translateY(18px);
+            z-index: 150;
         }
     }
 `;
@@ -130,7 +124,7 @@ export const SubWrap = styled.div`
     padding-top : 15px;
     top: 0;
     background-color: #826197;
-    z-index: 1000;
+    z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transform-origin: top;
     transform: scaleY(${(props) => (props.$ishovered ? 1 : 0)});
@@ -449,6 +443,7 @@ export const MobileNavWrap = styled.div`
                     &::after {
                         content: '';
                         position: absolute;
+                        background-color: #1c1c1c;
                         background-color: #1c1c1c;
                         width: 8px;
                         height: 2px;

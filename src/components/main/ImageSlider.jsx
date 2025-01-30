@@ -24,11 +24,11 @@ export default function ImageSlider() {
         mousewheel={true}
         keyboard={true}
         autoplay={{
-          delay: 5000, // 슬라이드 전환 시간 (밀리초)
-          disableOnInteraction: false, // 사용자가 조작한 후에도 자동 전환 유지
+          delay: 5000, 
+          disableOnInteraction: false, 
         }}
-        speed={1000} // 슬라이드 전환 속도 (밀리초)
-        loop={true} // 끝까지 갔을 때 다시 처음으로 돌아감
+        speed={1000} 
+        loop={true} 
         modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
         className="mySwiper"
       >
